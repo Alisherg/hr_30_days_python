@@ -1,22 +1,20 @@
 #!/usr/bin/env python3
 
 
-def solve(meal_cost: float, tip_percent: int, tax_percent: int) -> int:
+def main():
 
-    total_cost: int
+    # initialized variables
+    i: int = 4
+    d: float = 4.0
+    s: str = "HackerRank "
 
-    total_cost = (
-        meal_cost + (meal_cost * tip_percent / 100) + (meal_cost * tax_percent / 100)
-    )
+    # declare and read from stdin second int, float, string
+    sec_int, sec_flt, sec_str = int(input()), float(input()), input()
 
-    print(round(total_cost))
+    print(i + sec_int)
+    print(d + sec_flt)
+    print(s + sec_str)
 
 
 if __name__ == "__main__":
-    meal_cost = float(input())
-
-    tip_percent = int(input())
-
-    tax_percent = int(input())
-
-    solve(meal_cost, tip_percent, tax_percent)
+    main()
