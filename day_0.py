@@ -1,4 +1,9 @@
-def main():
+#!/usr/bin/env python3
+
+
+def main() -> str:
+
+    input_string: str
 
     input_string = input()
 
